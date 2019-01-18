@@ -3,32 +3,42 @@
 
 <head>
   <style>
+  /*the title */
     h1 {
+      /*Specific colors are added in to make a the linear gradient look exactly the way it was imgained (so it doesnt't look too purple in the middle) */
       background-image: linear-gradient(to right, rgb(220, 43, 43), rgb(190, 57, 57), rgb(9, 103, 225), rgb(65, 105, 243));
       text-align: center;
-      letter-spacing: 10px;
+      /*spaces letters out in the title so it doesn't look squished together*/
+      letter-spacing: 10px; 
+      /*Makes title white and gives it a shadow*/
       color: white;
       text-shadow: 2px 2px 4px #000000;
 
     }
-
+/*the style for the whole website/div*/
     #Whole {
       background-color: white;
+      /*gives space between the context and the border*/
       padding: 15px 50px;
+      /*given a clear background so the border image can be seen */
       border: 10px solid transparent;
+      /*border is made up of pawprints */
       -webkit-border-image: url(paws.png)20% round;
       border-image: url(paws.png)20% round;
+      /*allows the size of the div to get bigger if there is an overflow of contents */
       overflow: auto;
     }
-
+/*the divs where the bone images are*/
     nav {
+      /*allows the bones to be inline with the images*/
       display: inline-block;
     }
-
+/*the specific div in which the ruby bone is in */
     #rubybone {
       width: 200px;
       height: 150px;
       background-image: url(rubybone.png);
+      /*takes up the div size completley and doesnt need to change when width and height are changed*/
       background-size: cover;
       /*-webkit-transition: width 2s, height 2s, -webkit-transform 2s; */
       /*transition: width 2s, height 2s, transform 2s;*/
@@ -41,14 +51,14 @@
       /*-webkit-transform: rotate(180deg);*/
       /*transform: rotate(180deg);*/
     }
-
+/*the specific div in which the rookie bone is in */
     #rookiebone {
       width: 200px;
       height: 150px;
       background-image: url(rookiebone.png);
       background-size: cover;
     }
-
+/*the specific div in which the rookie image is in */
     #Rookie {
       width: 300px;
       height: 300px;
@@ -60,7 +70,7 @@
       transform: rotate(90deg);
       animation: bigger 2s ease-in-out 0s 1 normal
     }
-
+/*the specific div in which the ruby image is in */
     #Ruby {
       width: 300px;
       height: 300px;
@@ -71,7 +81,7 @@
       background-size: cover;
       animation: bigger 2s ease-in-out 0s 1 normal
     }
-
+/*Makes the image of ruby and rookie slowly get bigger once the website is opened */
     @keyframes bigger {
       from {
         width: 50px;
