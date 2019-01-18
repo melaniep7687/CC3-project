@@ -37,7 +37,7 @@
     nav {
       /*allows the bones to be inline with the images*/
       display: inline-block;
-    
+
     }
 
     /*the specific div in which the ruby bone is in */
@@ -50,7 +50,7 @@
       background-size: cover;
       -webkit-transition: -webkit-transform 2s;
       transition: transform 2s;
- 
+
     }
 
     /*when user hovers over the ruby bone it will rotate 360 deg */
@@ -67,7 +67,7 @@
       height: 150px;
       background-image: url(rookiebone.png);
       background-size: cover;
-       float: right;
+      float: right;
       -webkit-transition: -webkit-transform 2s;
       transition: transform 2s;
     }
@@ -118,6 +118,14 @@
         height: 300px;
       }
     }
+
+    p {
+      margin: 0;
+      position: absolute;
+      top: 300px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
   </style>
 </head>
 
@@ -127,6 +135,7 @@
     <nav id="rubybone"></nav>
     </nav>
     <section id="Ruby"></section>
+    <p>Ruby & Rookie are 2 beagle puppies that are siblings</p>
     <section id="Rookie"></section>
     </section>
     <nav id="rookiebone"></nav>
