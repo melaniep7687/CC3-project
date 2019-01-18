@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    h1 {
+      background-image: linear-gradient(to right, rgb(220, 43, 43), rgb(190, 57, 57), rgb(9, 103, 225), rgb(65, 105, 243));
+      text-align: center;
+      letter-spacing: 10px;
+      color: white;
+      text-shadow: 2px 2px 4px #000000;
+
+    }
+
+    #Whole {
+      background-color: white;
+      padding: 15px 50px;
+      border: 10px solid transparent;
+      border-image: url(paws.png)20% round;
+      overflow: auto;
+    }
+
+    nav {
+      display: inline-block;
+    }
+
+    #rubybone {
+      width: 200px;
+      height: 150px;
+      background-image: url(rubybone.png);
+      background-size: cover;
+      /*-webkit-transition: width 2s, height 2s, -webkit-transform 2s; */
+      /*transition: width 2s, height 2s, transform 2s;*/
+      transition:width 2s,height 2s;
+    }
+
+    #rubybone :hover {
+      width: 300px;
+      height: 300px;
+      /*-webkit-transform: rotate(180deg);*/
+      /*transform: rotate(180deg);*/
+    }
+
+    #rookiebone {
+      width: 200px;
+      height: 150px;
+      background-image: url(rookiebone.png);
+      background-size: cover;
+    }
+
+    #Rookie {
+      width: 300px;
+      height: 300px;
+      position: relative;
+      border: double;
+      float: right;
+      background-image: url(rookie.JPG);
+      background-size: cover;
+      transform: rotate(90deg);
+      animation: bigger 2s ease-in-out 0s 1 normal
+    }
+
+    #Ruby {
+      width: 300px;
+      height: 300px;
+      border: double;
+      float: left;
+      transform: rotate(90deg);
+      background-image: url(rubyimage.JPG);
+      background-size: cover;
+      animation: bigger 2s ease-in-out 0s 1 normal
+    }
+
+    @keyframes bigger {
+      from {
+        width: 50px;
+      }
+      to {
+        width: 300px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="Whole">
+    <h1>Ruby & Rookie</h1>
+    <nav id="rubybone"></nav>
+    </nav>
+    <section id="Ruby"></section>
+    <section id="Rookie"></section>
+    </section>
+    <nav id="rookiebone"></nav>
+  </div>
+
+  <!--possible camera roll-->
+  <!--<div class="w3-row-padding w3-margin-top">-->
+  <!--  <div class="w3-third">-->
+  <!--      <img src="ruby-and-rookie.JPG" style="width:100%">-->
+  <!--      <div class="w3-container">-->
+  <!--  </div>-->
+  <!--</div>-->
+
+</body>
+
+</html>
